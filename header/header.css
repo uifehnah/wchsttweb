@@ -1,0 +1,144 @@
+.header {
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 250ms;
+}
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px -4px gray;
+}
+
+.logo-img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+h1.logo {
+    display: inline;
+    margin: 0px;
+    padding: none;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    transition: all ease-in-out 250ms;
+    box-shadow: none;
+}
+
+div.right-side {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.left-side {
+    width: 30%;
+}
+
+div.left-side a{
+    display: inline-flex;
+    align-items: center;
+}
+
+a.hover-effect {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all ease-in-out 250ms;
+    color: black;
+}
+
+a.hover-effect:hover {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #76d378;
+}
+
+a.hover-effect:hover h1 {
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: black;
+}
+
+#snow {
+    color: #76d378;
+}
+
+#snow:hover {
+    color: #76d378;
+}
+
+.smaller-header-container {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 2px 5px -4px grey;
+    width: 100%;
+    text-align: center;
+}
+
+.smaller-left-side {
+    text-align: center;
+}
+
+.smaller-right-side {
+    display: none;
+}
+
+.smaller-right-side a {
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #ccffd9;
+    background-color: white;
+}
+
+#menu-toggler {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+div#menu-toggler::after {
+    content: "\2630";
+    float: right;
+    color:#76d378;
+}
+
+#topNavSmaller {
+    display:none;
+}
+
+@media only screen and (max-width: 1300px) {
+    /* .header{
+      flex-direction: column;
+    }
+    div.left-side {
+        width: auto;
+    }
+    div.right-side{
+        width: auto;
+        max-width: 100%;
+    }
+    a{
+        margin: 0 1rem;
+    } */
+
+    #topNavDesktop {
+        display: none;
+    }
+    #topNavSmaller {
+        display: block;
+    }
+    a.hover-effect:hover h1 {
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+  }
